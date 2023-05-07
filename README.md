@@ -21,6 +21,9 @@ The Run-BackgroundTask function accepts a ScriptBlock and an optional ProcessNam
 
 The download and upload functions serve to transfer files between the client and the server. They use Base64 encoding to transmit the file data over the network. Errors, if encountered during the file transfer process, are sent back to the client.
 
+![keylog](https://user-images.githubusercontent.com/3721991/236688796-1fe1af6e-e480-4e5b-84db-796679394a8c.PNG)
+
+
 **Persistence Mechanisms**
 
 The script uses two different methods to achieve persistence on the target system. First, it copies itself to the "C:\ProgramData" folder and modifies the registry key "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" to start the script every time the user logs in. Second, it copies the script to the user's Startup folder, ensuring that it runs every time the user starts their system.
